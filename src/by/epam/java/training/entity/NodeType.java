@@ -1,6 +1,6 @@
 package by.epam.java.training.entity;
 
-public enum TagType {
+public enum NodeType {
 
     OPEN_TAG,
     CLOSE_TAG,
