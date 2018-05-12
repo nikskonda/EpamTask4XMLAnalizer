@@ -1,28 +1,26 @@
 package by.epam.java.training.entity;
 
-import java.util.Objects;
-
-public class TagUnit {
+public class Node {
 
     private static final long serialVersionUID = 1L;
 
-    private TagType tagType;
+    private NodeType nodeType;
     private String value;
 
-    public TagUnit() {
+    public Node() {
     }
 
-    public TagUnit(TagType tagType, String value) {
-        this.tagType = tagType;
+    public Node(NodeType nodeType, String value) {
+        this.nodeType = nodeType;
         this.value = value;
     }
 
-    public TagType getTagType() {
-        return tagType;
+    public NodeType getNodeType() {
+        return nodeType;
     }
 
-    public void setTagType(TagType tagType) {
-        this.tagType = tagType;
+    public void setNodeType(NodeType nodeType) {
+        this.nodeType = nodeType;
     }
 
     public String getValue() {
@@ -37,12 +35,12 @@ public class TagUnit {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-        TagUnit tagUnit = (TagUnit) obj;
+        Node node = (Node) obj;
 
-        if (!this.tagType.equals(tagUnit.tagType)){
+        if (!this.nodeType.equals(node.nodeType)){
             return false;
         }
-        if (!this.value.equals(tagUnit.value)){
+        if (!this.value.equals(node.value)){
             return false;
         }
         return true;
@@ -51,15 +49,14 @@ public class TagUnit {
     @Override
     public int hashCode() {
         int hashCode = 0;
-        hashCode += this.tagType.hashCode();
+        hashCode += this.nodeType.hashCode();
         hashCode += this.value.hashCode();
         return hashCode;
     }
 
-    @Override
-    public String toString() {
+    public String toConsole() {
         StringBuilder sb = new StringBuilder();
-        sb.append(this.tagType.toString()).append(": ").append(this.value);
+        sb.append(this.nodeType.toString()).append(": ").append(this.value);
         return sb.toString();
     }
 }

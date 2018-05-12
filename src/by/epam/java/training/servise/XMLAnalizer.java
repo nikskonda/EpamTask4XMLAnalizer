@@ -1,11 +1,10 @@
 package by.epam.java.training.servise;
 
-import by.epam.java.training.entity.XMLDocument;
 
-import java.util.List;
+import by.epam.java.training.entity.Node;
 
-public interface XMLAnalizer {
+public interface XMLAnalizer extends AutoCloseable {
 
-    XMLDocument analyzeXML(String fileName);
+    Node nextNode();
 
 }
