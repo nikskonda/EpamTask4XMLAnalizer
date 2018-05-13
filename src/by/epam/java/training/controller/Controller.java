@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Controller {
     public static void main(String[] args) {
-        try (XMLAnalizer analizer = new XMLAnalizerImpl("resources/notes.xml")) {
+        try (XMLAnalizer analizer = new XMLAnalizerImpl("resources/breakfastMenu.xml")) {
             Node node;
             while ((node = analizer.nextNode()) != null){
                 NodePrinter.printlnNode(node);

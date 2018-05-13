@@ -41,13 +41,13 @@ public class XMLAnalizerImpl implements XMLAnalizer {
     }
 
     private Node analizeGotSymbol(char symbol){
-        if (!isSpecialChar(symbol) && !isSpacesStore()) {
+        if (isSpacesStore()){
+            clearStore();
+        }
+        if (!isSpecialChar(symbol)) {
             return analizeTempState(symbol);
         }
-        else {
-            clearStore();
-            return null;
-        }
+        return null;
     }
 
     private Node analizeTempState(char symbol){
@@ -58,7 +58,6 @@ public class XMLAnalizerImpl implements XMLAnalizer {
             store.append(symbol);
             return node;
         }
-
         if (TagSymbols.CLOSING_TAG.getSymbol() == symbol && !isEmptyStore()) {
             store.append(symbol);
             node = builder.build(store.toString());

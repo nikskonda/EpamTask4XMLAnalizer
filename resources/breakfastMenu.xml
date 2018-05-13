@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<breakfast-menu>
+<breakfast-menu
 	<food id="1" status="true">
 		<name>Belgian Waffles</name>
 		<price> $5.95</price>
@@ -12,4 +12,4 @@
 		<description>light Belgian waffles covered with strawberrys and whipped cream</description>
 		<calories>900</calories>
 	</food>
-</breakfast-menu
+</breakfast-menu>
