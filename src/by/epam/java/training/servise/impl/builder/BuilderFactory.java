@@ -1,7 +1,5 @@
 package by.epam.java.training.servise.impl.builder;
 
-import by.epam.java.training.servise.impl.builder.impl.NodeBuilderImpl;
-
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
