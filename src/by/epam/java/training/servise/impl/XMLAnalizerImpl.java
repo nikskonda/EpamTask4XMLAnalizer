@@ -44,7 +44,7 @@ public class XMLAnalizerImpl implements XMLAnalizer {
     }
 
     @Override
-    public void close() throws Exception {
+    public void close() throws IOException {
         reader.close();
     }
 }
