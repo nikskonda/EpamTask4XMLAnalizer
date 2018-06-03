@@ -1,4 +1,4 @@
-package by.epam.java.training.servise.impl.builder;
+package by.epam.java.training.builder;
 
 import by.epam.java.training.entity.Node;
 

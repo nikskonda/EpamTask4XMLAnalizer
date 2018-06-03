@@ -1,11 +1,9 @@
 package by.epam.java.training.servise.impl;
 
 import by.epam.java.training.entity.Node;
-import by.epam.java.training.entity.TagSymbols;
 import by.epam.java.training.printer.LogPrinter;
 import by.epam.java.training.servise.XMLAnalizer;
-import by.epam.java.training.servise.impl.builder.BuilderFactory;
-import by.epam.java.training.servise.impl.builder.NodeBuilder;
+import by.epam.java.training.builder.BuilderFactory;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;

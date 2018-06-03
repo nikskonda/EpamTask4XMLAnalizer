@@ -1,5 +1,6 @@
-package by.epam.java.training.servise.impl.builder;
+package by.epam.java.training.builder;
 
+import by.epam.java.training.builder.impl.NodeBuilderImpl;
 import by.epam.java.training.printer.LogPrinter;
 import org.apache.log4j.Logger;
 import java.util.concurrent.locks.Lock;

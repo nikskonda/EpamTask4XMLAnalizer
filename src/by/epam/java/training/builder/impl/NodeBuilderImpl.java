@@ -1,8 +1,8 @@
-package by.epam.java.training.servise.impl.builder;
+package by.epam.java.training.builder.impl;
 
+import by.epam.java.training.builder.NodeBuilder;
 import by.epam.java.training.entity.Node;
 import by.epam.java.training.entity.NodeType;
-import by.epam.java.training.servise.impl.builder.NodeBuilder;
 
 public class NodeBuilderImpl implements NodeBuilder {
 

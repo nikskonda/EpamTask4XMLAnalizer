@@ -2,7 +2,7 @@ package by.epam.java.training.servise.impl;
 
 import by.epam.java.training.entity.Node;
 import by.epam.java.training.entity.TagSymbols;
-import by.epam.java.training.servise.impl.builder.NodeBuilder;
+import by.epam.java.training.builder.NodeBuilder;
 
 public class SymbolAnalizer {
 
