@@ -9,8 +9,8 @@ public class SymbolAnalizer {
     private StringBuilder store;
     private NodeBuilder builder;
 
-    private final String SPECIAL_CHARACTER_STRING = "\n\t\r";
-    private final String STRING_OF_SPACES_PARSER = "^+\\s";
+    private static final String SPECIAL_CHARACTER_STRING = "\n\t\r";
+    private static final String STRING_OF_SPACES_PARSER = "^+\\s";
 
     public SymbolAnalizer(NodeBuilder nodeBuilder){
         store = new StringBuilder();
